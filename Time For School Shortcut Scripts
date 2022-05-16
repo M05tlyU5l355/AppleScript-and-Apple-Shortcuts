@@ -1,0 +1,54 @@
+#Opens Excel
+on run {input, parameters}
+	
+	tell application "Microsoft Excel"
+		
+		activate
+		
+	end tell
+	
+	return input
+end run
+
+#Opens Word
+on run {input, parameters}
+	
+	tell application "Microsoft Word"
+		
+		activate
+		
+	end tell
+	
+	return input
+end run
+
+#Opens Brave Browser to school-related URLs
+on run {input, parameters}
+	
+	tell application "Brave Browser" to activate
+	
+	tell application "System Events"
+		
+		key code 37 using command down
+		delay 0.5
+		keystroke "https://cas.fit.edu/cas/login?service=https%3A%2F%2Ffit.instructure.com%2Flogin%2Fcas"
+		delay 0.5
+		key code 36
+		key code 17 using command down
+		delay 0.5
+		keystroke "https://www.scribbr.com/apa-citation-generator/"
+		key code 36
+		delay 0.5
+		key code 18 using command down
+	end tell
+	
+	return input
+end run
+
+#Plays study music in Spotify
+on run {input, parameters}
+	tell application "Spotify"
+		play track "spotify:artist:3GDW9IVihALy2ArcOI2HLZ"
+	end tell
+	return input
+end run
