@@ -1,3 +1,5 @@
+#icloud link for the Time For School Shortcut
+#https://www.icloud.com/shortcuts/4d2e53222fa947e9aadd4b48b5a60092
 #Opens Excel
 on run {input, parameters}
 	
