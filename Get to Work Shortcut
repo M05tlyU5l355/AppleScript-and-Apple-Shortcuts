@@ -1,0 +1,78 @@
+#https://www.icloud.com/shortcuts/f9e4ec6f794746549f54a589ac8c19ff
+
+#Opens Trello
+on run {input, parameters}
+	
+	tell application "Trello"
+		
+		activate
+		
+	end tell
+	
+	return input
+end run
+
+#Opens Teams
+on run {input, parameters}
+	
+	tell application "Microsoft Teams"
+		
+		activate
+		
+	end tell
+	
+	return input
+end run
+
+#Opens Calendar
+on run {input, parameters}
+	
+	tell application "Calendar"
+		
+		activate
+		
+	end tell
+	
+	return input
+end run
+
+#Opens Mail
+on run {input, parameters}
+	
+	tell application "Mail"
+		
+		activate
+		
+	end tell
+	
+	return input
+end run
+
+#Opens Firefox
+on run {input, parameters}
+	
+	tell application "Firefox"
+		
+		activate
+		
+	end tell
+	
+	return input
+end run
+
+#Opens Brave Browser to Jira
+on run {input, parameters}
+	
+	tell application "Brave Browser" to activate
+	
+	tell application "System Events"
+		
+		key code 37 using command down
+		delay 1
+		keystroke "https://chenegads.atlassian.net/jira/dashboards/last-visited"
+		delay 1
+		key code 36
+	end tell
+	
+	return input
+end run
